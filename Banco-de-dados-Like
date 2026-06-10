@@ -1,0 +1,7 @@
+exercicio1
+/*seleciona a coluna CustomerName na tabela Customer,cria um alias ,seleciona os nomes que começam com la e coloca os dados em ordem crescente */
+SELECT CustomerName AS 'Nome do cliente ' FROM Customers  
+WHERE CustomerName LIKE 'La%'
+ORDER BY  CustomerName ASC;
+------------------------------------------------------------------------------------------------------------------------------------
+exercicio2
