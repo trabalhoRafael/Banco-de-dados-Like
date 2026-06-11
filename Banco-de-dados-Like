@@ -689,3 +689,17 @@ SELECT CustomerID AS 'ID',
 FROM Customers
 WHERE ContactName LIKE '%King%'
 ORDER BY CustomerID ASC
+
+
+50. Selecionar clientes onde `PostalCode` começa com &quot;3&quot; e ordenar por`CustomerName` e `Country`.
+
+SELECT CustomerID AS 'ID' ,
+       CustomerName AS 'Usuario',
+       ContactName AS 'Nome',
+       Address AS 'Endereco',
+       City AS 'Cidade',
+       PostalCode AS 'Caixa Postal',
+       Country AS 'Pais'
+FROM Customers
+WHERE PostalCode LIKE '3%'
+ORDER BY CustomerName,Country ASC;
